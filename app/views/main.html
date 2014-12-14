@@ -1,0 +1,90 @@
+<div class="row marketing">
+
+	<h3>Laureates</h3>
+	<table datatable="ng" dt-options="dtOptionsLaureates" dt-column-defs="dtColumnDefsLaureates" class="tables">
+	    <thead>
+	    <tr>
+	        <th>ID</th>
+	        <th>First Name</th>
+	        <th>Last Name</th>
+	        <th>Born</th>
+	        <th>Died</th>
+	        <th>Born Country</th>
+	        <th>Born Country Code</th>
+	        <th>Born City</th>
+	        <th>Died Country</th>
+	        <th>Died Country Code</th>
+	        <th>Died City</th>
+	        <th>Gender</th>
+	    </tr>
+	    </thead>
+	    <tbody>
+	    <tr ng-repeat="laureate in laureates">
+	        <td>{{ laureate.id }}</td>
+	        <td>{{ laureate.firstname }}</td>
+	        <td>{{ laureate.surname }}</td>
+	        <td>{{ laureate.born }}</td>
+	        <td>{{ laureate.died }}</td>
+	        <td>{{ laureate.bornCountry }}</td>
+	        <td>{{ laureate.bornCountryCode }}</td>
+	        <td>{{ laureate.bornCity }}</td>
+	        <td>{{ laureate.diedCountry }}</td>
+	        <td>{{ laureate.diedCountryCode }}</td>
+	        <td>{{ laureate.diedCity }}</td>
+	        <td>{{ laureate.gender }}</td>
+	    </tr>
+	    </tbody>
+	</table>
+	
+	<h3>Laureates Prizes</h3>
+	<table datatable="ng" dt-options="dtOptionsPrizes" dt-column-defs="dtColumnDefsPrizes" class="tables">
+	    <thead>
+	    <tr>
+	        <th>ID</th>
+	        <th>First Name</th>
+	        <th>Last Name</th>
+	        <th>Year</th>
+	        <th>Category</th>
+	        <th>Share</th>
+	        <th>Motivation</th>
+	    </tr>
+	    </thead>
+	    <tbody>
+	    <tr ng-repeat="prize in prizes">
+	        <td>{{ prize.id }}</td>
+	        <td>{{ prize.firstname }}</td>
+	        <td>{{ prize.surname }}</td>
+	        <td>{{ prize.year }}</td>
+	        <td>{{ prize.category }}</td>
+	        <td>{{ prize.share }}</td>
+	        <td>{{ prize.motivation }}</td>
+	    </tr>
+	    </tbody>
+	</table>
+
+
+	<h3>Laureates Affiliations</h3>
+	<table datatable="ng" dt-options="dtOptionsAffil" dt-column-defs="dtColumnDefsAffil" class="tables">
+	    <thead>
+	    <tr>
+	        <th>ID</th>
+	        <th>First Name</th>
+	        <th>Last Name</th>
+	        <th>Affiliation Name</th>
+	        <th>Affiliation City</th>
+	        <th>Affiliation Country</th>
+	    </tr>
+	    </thead>
+	    <tbody>
+	    <tr ng-repeat="affiliation in affiliations">
+	        <td>{{ affiliation.id }}</td>
+	        <td>{{ affiliation.firstname }}</td>
+	        <td>{{ affiliation.surname }}</td>
+	        <td>{{ affiliation.name }}</td>
+	        <td>{{ affiliation.city }}</td>
+	        <td>{{ affiliation.country }}</td>
+	    </tr>
+	    </tbody>
+	</table>
+
+</div>
